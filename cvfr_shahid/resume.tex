@@ -1,0 +1,210 @@
+\documentclass[a4paper]{MagicalCV}
+
+% Removing page numbers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+
+% Change the geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Defining your colors
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-purple}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+% start document
+\begin{document}
+
+\vspace*{0.3cm}
+
+% Title name
+\namesection{Muhammad Salman}{Shahid}{
+\phone{+33 7 60 16 13 90} \email{\href{mailto:salmanshahid8@gmail.com}{\bf salmanshahid8@gmail.com}} \linkedin{\href{https://www.linkedin.com/in/salmanshahid8}{salmanshahid8}} \github{\href{https://github.com/salmanshahid8}{salmanshahid8}}} 
+
+% Column one
+\begin{minipage}[t]{0.33\textwidth} 
+
+% Education
+\cvsection{Formation} 
+
+\sectionsep
+
+\subsection{Université Grenoble Alpes}
+\descript{Doctorat}
+\cvevent{Avr. 2022}{Grenoble, FR} 
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item \href{https://theses.hal.science/tel-03766410v1}{Coup de pouce à la consommation d'électricité dans les ménages : Un cas d'étude du secteur résidentiel français}
+\end{tightemize}
+\sectionsep
+
+\subsection{Grenoble-INP}
+\descript{Master}
+\cvevent{Août 2017}{Grenoble, FR}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item \href{https://ense3.grenoble-inp.fr/en/study-at-ense3/master-in-electrical-engineering-for-smart-grids-and-buildings-1#page-presentation}{Génie électrique pour les réseaux et bâtiments intelligents}
+\end{tightemize}
+\sectionsep
+
+% Formation en cours
+\cvsection{Formation en cours}
+\sectionsep
+\begin{tightemize}
+\item Cloud Computing
+\item MLOps
+\end{tightemize}
+\sectionsep
+
+% Competences
+\cvsection{Compétences}
+\sectionsep
+
+\subsection{Langue vivante}
+\begin{tightemize}
+    \item Français 
+    \item Anglais
+\end{tightemize}
+\sectionsep
+
+\subsection{Programmation}
+\textbullet{} Python \textbullet{} Shell \textbullet{} SQL \textbullet{} Flux
+\sectionsep
+
+\subsection{Outils de base de données}
+\textbullet{} MSSQL \textbullet{} MongoDB \textbullet{} InfluxDB 
+\sectionsep
+
+\subsection{Serveur et Cloud}
+\begin{tightemize}
+    \item Linux Serveur 
+    \item Amazon AWS 
+\end{tightemize}
+% \textbullet{}  \textbullet{} 
+\sectionsep
+
+\subsection{Virtualisation et CI/CD}
+\textbullet{} VMware \textbullet{} Gitlab  \textbullet{} Jenkins \textbullet{} Docker
+\sectionsep
+
+\subsection{Tests et Monitoring}
+\textbullet{} PyTest \textbullet{} UnitTest \textbullet{} Grafana
+\sectionsep
+
+\subsection{Intelligence Artificielle}
+\begin{tightemize}
+    \item Scikit-Learn 
+    \item Tensorflow/Keras
+    \item PyTorch
+\end{tightemize}
+%\textbullet{} Scikit-Learn \textbullet{} Tensorflow/Keras 
+
+%\textbullet{} PyTorch
+\sectionsep
+
+\subsection{Analyse Statistique}
+\textbullet{} T Test \textbullet{} Mann–Whitney U test 
+
+\textbullet{} Ordinary Least Square Test
+\sectionsep
+
+
+% Column two
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+% Experience
+\cvsection{Expériences Professionnelles}
+
+\sectionsep
+
+\runsubsection{Ingénieur de Recherche} \\
+\descript{ENEDIS}
+\cvevent{Dec 2023 – Présent}{Grenoble, FR} 
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Pipeline ETL pour extraction de données, traitement TAL (NLP) de données textuelles de séries chronologiques, et stockage sur une base de données noSQL.
+\end{tightemize}
+\sectionsep
+
+
+\runsubsection{Expert En Ingénierie du Logiciel} \\
+\descript{CSTB}
+\cvevent{Mars 2023 – Nov. 2023}{Grenoble, FR} 
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Stockage, monitoring et partage des données temporelles via APIs développée pour
+\begin{tightemize}
+    \item un projet français « Observatoire de la Transition Energétique »
+    \item et un projet européen « COLLECTiEF »
+\end{tightemize}
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Expert En Calcul Scientifique} \\
+\descript{IRT-Nano-Elec}
+\cvevent{Mars 2022 – Févr. 2023}{Grenoble, FR} 
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Pipeline ETL pour traitement des données temporelles de la consommation d'énergie, ainsi analyse du potentiel de flexibilité d'énergie d'un bâtiment tertiaire français.
+\end{tightemize}
+\sectionsep
+
+\cvsection{Activités en parallèle}
+
+\sectionsep
+\runsubsection{Membre du GT - Numérique Responsable} \\
+\descript{Conseil de développement de Grenoble Alpes Métropole}
+\cvevent{Oct 2024 – Présent}{Grenoble, FR} 
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Délibération dans un panel de citoyens pour propager les bonnes pratiques du numérique responsable dans la métropole
+\end{tightemize}
+\sectionsep
+
+\sectionsep
+\runsubsection{Enseignant (Vacataire)} \\
+\descript{Grenoble INP - Ense3}
+\cvevent{Sep 2022 – Présent}{Grenoble, FR} 
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Enseignement des cours en anglais
+\begin{tightemize}
+    \item Anglais et communication (1ère année)
+    \item Machine Learning (3ème année)
+\end{tightemize}
+\end{tightemize}
+\sectionsep
+
+
+\cvsection{Publications Récentes}
+
+\begin{tightemize}
+
+\item[1] Hosseini, M., Papadopoulos, P., Shahid, M. S., Javanroodi, K., Erba, S., Grover-silva, E., Riederer, P., Moazami, A., Wurtz, F., Delinchant, B., Carlucci, S., Aghaei, M., & Nik, V. (2026). Experimental insights on CIRLEM: Enhancing energy efficiency and flexibility in buildings. Energy and Buildings, 351, 116655. \href{https://doi.org/10.1016/j.enbuild.2025.116655}{https://doi.org/10.1016/j.enbuild.2025.116655}
+
+\item[2] Shahid, M., Cauchois, P., De Moliner, A., & Delinchant, B. (2025). Improvement of electricity consumption model using variables constructed by zero-shot labelling on social media data. In Proceedings of the 16th ACM International Conference on Future and Sustainable Energy Systems (pp. 687–698). Association for Computing Machinery. \href{https://doi.org/10.1145/3679240.3734636}
+{https://doi.org/10.1145/3679240.3734636}
+
+\end{tightemize}
+
+% ending the page
+\end{minipage} 
+\end{document}  
