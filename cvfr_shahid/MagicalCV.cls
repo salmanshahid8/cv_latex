@@ -66,6 +66,8 @@
 \RequirePackage{multirow,tabularx}
 % Change the page laout
 \RequirePackage{changepage}
+% for symbols
+\RequirePackage{academicons}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                                   Icons
@@ -79,6 +81,7 @@
 \newcommand{\twittersymbol}{\faTwitter}
 \newcommand{\githubsymbol}{\faGithub}
 \newcommand{\orcidsymbol}{\aiOrcid}
+\newcommand{\googlesymbol}{\aiGoogleScholar}
 \newcommand{\mailsymbol}{\faEnvelope}
 
 \newcommand{\printinfo}[2]{\mbox{\textcolor{accent}{#1}\hspace{0.5em}#2\hspace{0.5em}}}
@@ -94,6 +97,7 @@
 \newcommand{\linkedin}[1]{\printinfo{\linkedinsymbol}{#1}}
 \newcommand{\github}[1]{\printinfo{\githubsymbol}{#1}}
 \newcommand{\orcid}[1]{\printinfo{\orcidsymbol}{#1}}
+\newcommand{\google}[1]{\printinfo{\googlesymbol}{#1}}
 \newcommand{\location}[1]{\printinfo{\locationsymbol}{#1}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -312,7 +316,7 @@ Last Updated on \today
 % Name command
 \newcommand{\namesection}[3]{
 \centering{
-\fontsize{40pt}{60pt}
+\fontsize{30pt}{50pt}
 \fontspec[Path = fonts/lato/]{Lato-Hai}\selectfont #1 
 \fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #2
 } \\[5pt]

@@ -5,6 +5,9 @@
 \pagestyle{fancy}
 \fancyhf{}
 
+% adding icons
+% \usepackage{skillicons}
+
 % Change the geometry
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
 
@@ -35,7 +38,18 @@
 
 % Title name
 \namesection{Muhammad Salman}{Shahid}{
-\phone{+33 7 60 16 13 90} \email{\href{mailto:salmanshahid8@gmail.com}{\bf salmanshahid8@gmail.com}} \linkedin{\href{https://www.linkedin.com/in/salmanshahid8}{salmanshahid8}} \github{\href{https://github.com/salmanshahid8}{salmanshahid8}}} 
+
+\vspace{1pt} % Adds a tiny bit of space
+\phone{+33 7 60 16 13 90} \quad 
+\email{\href{mailto:salmanshahid8@gmail.com}{salmanshahid8@gmail.com}} \quad \linkedin{\href{https://www.linkedin.com/in/salmanshahid8}{salmanshahid8}}
+
+\vspace{1pt} % Adds a tiny bit of space
+\orcid{\href{https://orcid.org/0009-0002-4365-7179}{0009-0002-4365-7179}} \quad \google{\href{https://scholar.google.fr/citations?user=9lCkV6oAAAAJ}{salmanshahid8}} \quad \github{\href{https://github.com/salmanshahid8}{salmanshahid8}}
+
+\vspace{1pt} % Adds a tiny bit of space
+{\color{gray} \bf Enseignant - Chercheur \quad | \quad Data Scientist (Série Temporelle , TAL , LLM) \quad | \quad Ingénieur MLOps}} 
+
+\vspace{5pt}
 
 % Column one
 \begin{minipage}[t]{0.33\textwidth} 
@@ -50,80 +64,60 @@
 \cvevent{Avr. 2022}{Grenoble, FR} 
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item \href{https://theses.hal.science/tel-03766410v1}{Coup de pouce à la consommation d'électricité dans les ménages : Un cas d'étude du secteur résidentiel français}
+\item \href{https://theses.hal.science/tel-03766410v1}{Titre : Coup de pouce à la consommation d'électricité dans les ménages : Un cas d'étude du secteur résidentiel français}
+\begin{tightemize}
+    \item Conception d'alertes écologiques basées sur le \textbf{nudge} grâce à \textbf{science comportementale}
+    \item \textbf{Ingénierie des données} sur la consommation énergétique des ménages français
+    \item Analyse d'impact des \textbf{« nudges »} grâce à la \textbf{science des données} et à \textbf{l'économétrie}
+\end{tightemize}
 \end{tightemize}
 \sectionsep
 
-\subsection{Grenoble-INP}
-\descript{Master}
-\cvevent{Août 2017}{Grenoble, FR}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
-\begin{tightemize}
-\item \href{https://ense3.grenoble-inp.fr/en/study-at-ense3/master-in-electrical-engineering-for-smart-grids-and-buildings-1#page-presentation}{Génie électrique pour les réseaux et bâtiments intelligents}
-\end{tightemize}
-\sectionsep
-
-% Formation en cours
-\cvsection{Formation en cours}
-\sectionsep
-\begin{tightemize}
-\item Cloud Computing
-\item MLOps
-\end{tightemize}
-\sectionsep
 
 % Competences
 \cvsection{Compétences}
 \sectionsep
 
-\subsection{Langue vivante}
-\begin{tightemize}
-    \item Français 
-    \item Anglais
-\end{tightemize}
+\subsection{Langue Vivante}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\textbullet{} Français \quad \textbullet{} Anglais \quad \textbullet{} Ourdou
 \sectionsep
 
 \subsection{Programmation}
-\textbullet{} Python \textbullet{} Shell \textbullet{} SQL \textbullet{} Flux
-\sectionsep
+\textbullet{} Python \textbf{(+ uv)} \quad \textbullet{} SQL \quad \textbullet{} Flux
 
-\subsection{Outils de base de données}
-\textbullet{} MSSQL \textbullet{} MongoDB \textbullet{} InfluxDB 
-\sectionsep
+\textbullet{} FastAPI \quad \textbullet{} MLFlow \quad \textbullet{} dbt
 
-\subsection{Serveur et Cloud}
-\begin{tightemize}
-    \item Linux Serveur 
-    \item Amazon AWS 
-\end{tightemize}
-% \textbullet{}  \textbullet{} 
-\sectionsep
-
-\subsection{Virtualisation et CI/CD}
-\textbullet{} VMware \textbullet{} Gitlab  \textbullet{} Jenkins \textbullet{} Docker
-\sectionsep
-
-\subsection{Tests et Monitoring}
-\textbullet{} PyTest \textbullet{} UnitTest \textbullet{} Grafana
+\textbullet{} PyTest \quad \textbullet{} Pydantic
 \sectionsep
 
 \subsection{Intelligence Artificielle}
-\begin{tightemize}
-    \item Scikit-Learn 
-    \item Tensorflow/Keras
-    \item PyTorch
-\end{tightemize}
-%\textbullet{} Scikit-Learn \textbullet{} Tensorflow/Keras 
+\textbullet{} Scikit-Learn \quad \textbullet{} Tensorflow
 
-%\textbullet{} PyTorch
+\textbullet{} PyTorch \quad \textbullet{} HuggingFace
 \sectionsep
 
-\subsection{Analyse Statistique}
-\textbullet{} T Test \textbullet{} Mann–Whitney U test 
+\subsection{Outils de base de données}
+\textbullet{} SQLite \quad \textbullet{} InfluxDB
 
-\textbullet{} Ordinary Least Square Test
+\textbullet{} MongoDB \quad \textbullet{} PostgreSQL
+
+\textbullet{} Apache Airflow
+
 \sectionsep
 
+\subsection{MLOps}
+\textbullet{} Linux Servers (Ubuntu , Debian) 
+
+\textbullet{} Amazon AWS \quad \textbullet{} Microsoft Azure 
+
+\textbullet{} DataBricks \quad \textbullet{} Docker \quad \textbullet{} nixtla
+
+\textbullet{} CI/CD (Github Actions)
+
+\textbullet{} Grafana \quad \textbullet{} Quarto
+
+\sectionsep
 
 % Column two
 \end{minipage} 
@@ -136,48 +130,40 @@
 \sectionsep
 
 \runsubsection{Ingénieur de Recherche} \\
-\descript{ENEDIS}
-\cvevent{Dec 2023 – Présent}{Grenoble, FR} 
+\descript{G2ELab - Laboratoire de génie électrique de Grenoble}
+\cvevent{Dec. 2023 – Présent}{Grenoble, FR} 
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Pipeline ETL pour extraction de données, traitement TAL (NLP) de données textuelles de séries chronologiques, et stockage sur une base de données noSQL.
+\item Gestion du \textbf{pipeline ETL} pour l'extraction des données textuelles, \textbf{traitement TAL} et stockage dans une \textbf{base de données NoSQL}.
+\item Création et validation des \textbf{variables liées aux événements} sur la \textbf{prévision de la consommation d'énergie} à l'aide du \textbf{ML/IA}.
 \end{tightemize}
+\vspace{3pt} % Hacky fix for awkward extra vertical space
 \sectionsep
 
-
 \runsubsection{Expert En Ingénierie du Logiciel} \\
-\descript{CSTB}
+\descript{CSTB - Centre scientifique et technique du bâtiment}
 \cvevent{Mars 2023 – Nov. 2023}{Grenoble, FR} 
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Stockage, monitoring et partage des données temporelles via APIs développée pour
+\item Implémentation de la \textbf{gestion des données temporelles}, y compris le \textbf{partage de données via API} vers les utilisateurs ML en aval:
 \begin{tightemize}
-    \item un projet français « Observatoire de la Transition Energétique »
-    \item et un projet européen « COLLECTiEF »
+    \item d'un projet français \href{https://ote.univ-grenoble-alpes.fr/projets-ote}{\bf «Observatoire de la Transition Energétique»}
+    \item et d'un projet européen \href{https://collectief-project.eu/}{\bf «COLLECTiEF»} 
 \end{tightemize}
 \end{tightemize}
+\vspace{3pt}
 \sectionsep
 
 \runsubsection{Expert En Calcul Scientifique} \\
-\descript{IRT-Nano-Elec}
-\cvevent{Mars 2022 – Févr. 2023}{Grenoble, FR} 
+\descript{NanoElec}
+\cvevent{Mars 2022 – Fev. 2023}{Grenoble, FR} 
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Pipeline ETL pour traitement des données temporelles de la consommation d'énergie, ainsi analyse du potentiel de flexibilité d'énergie d'un bâtiment tertiaire français.
+\item Implémentation d'une \textbf{orchestration des données} de série temporelle afin de quantifier la \textbf{flexibilité énergétique} dans un bâtiment tertiare.
 \end{tightemize}
 \sectionsep
 
 \cvsection{Activités en parallèle}
-
-\sectionsep
-\runsubsection{Membre du GT - Numérique Responsable} \\
-\descript{Conseil de développement de Grenoble Alpes Métropole}
-\cvevent{Oct 2024 – Présent}{Grenoble, FR} 
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
-\begin{tightemize}
-\item Délibération dans un panel de citoyens pour propager les bonnes pratiques du numérique responsable dans la métropole
-\end{tightemize}
-\sectionsep
 
 \sectionsep
 \runsubsection{Enseignant (Vacataire)} \\
@@ -185,24 +171,26 @@
 \cvevent{Sep 2022 – Présent}{Grenoble, FR} 
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Enseignement des cours en anglais
-\begin{tightemize}
-    \item Anglais et communication (1ère année)
-    \item Machine Learning (3ème année)
-\end{tightemize}
+\item \textbf{Anglais} et Communication (L1 - Français)
+\item \textbf{Machine Learning} (L3 - Français)
+\item Machine Learning et \textbf{Optimisation} (M2 - International)
 \end{tightemize}
 \sectionsep
 
-
-\cvsection{Publications Récentes}
-
+\sectionsep
+\runsubsection{Membre du GT - Numérique Responsable} \\
+\descript{Conseil de développement de Grenoble Alpes Métropole}
+\cvevent{Oct 2024 – Présent}{Grenoble, FR} 
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
+\item Délibération dans un panel de citoyens sur \textbf{les bonnes pratiques du numérique responsable} à diffuser dans la métropole
+\end{tightemize}
+\sectionsep
 
-\item[1] Hosseini, M., Papadopoulos, P., Shahid, M. S., Javanroodi, K., Erba, S., Grover-silva, E., Riederer, P., Moazami, A., Wurtz, F., Delinchant, B., Carlucci, S., Aghaei, M., & Nik, V. (2026). Experimental insights on CIRLEM: Enhancing energy efficiency and flexibility in buildings. Energy and Buildings, 351, 116655. \href{https://doi.org/10.1016/j.enbuild.2025.116655}{https://doi.org/10.1016/j.enbuild.2025.116655}
-
-\item[2] Shahid, M., Cauchois, P., De Moliner, A., & Delinchant, B. (2025). Improvement of electricity consumption model using variables constructed by zero-shot labelling on social media data. In Proceedings of the 16th ACM International Conference on Future and Sustainable Energy Systems (pp. 687–698). Association for Computing Machinery. \href{https://doi.org/10.1145/3679240.3734636}
-{https://doi.org/10.1145/3679240.3734636}
-
+\cvsection{Publication Récente}
+\vspace{3pt} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Hosseini, M., Papadopoulos, P., \textbf{Shahid, M. S.}, Javanroodi, K., Erba, S., Grover-silva, E., Riederer, P., Moazami, A., Wurtz, F., Delinchant, B., Carlucci, S., Aghaei, M., \& Nik, V. (2025). Experimental insights on CIRLEM: Enhancing energy efficiency and flexibility in buildings. Energy and Buildings, 351, 116655. \href{https://doi.org/10.1016/j.enbuild.2025.116655}{https://doi.org/10.1016/j.enbuild.2025.116655}
 \end{tightemize}
 
 % ending the page
